@@ -1,0 +1,5 @@
+Key differences for UDP (compared to TCP):
+
+- Socket Type: SOCK_DGRAM instead of SOCK_STREAM.
+- Server-side: No listen() or accept() calls.
+- Data Transfer: Use sendto() and recvfrom() instead of write() and read(). These functions allow specifying destination/source addresses for each packet.
